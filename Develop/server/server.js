@@ -39,7 +39,7 @@ if (process.env.NODE_ENV === "production") {
 // app.use(routes);
 
 app.get("*", (req, res) => {
-  res.sendFile(__dirname, "/client/public/");
+  res.sendFile(__dirname, "/client/build/index.html");
 });
 
 db.once("open", () => {
